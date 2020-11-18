@@ -18,7 +18,6 @@ module.exports = app => {
             existOrError(user.nome,"nome não informado")
             existOrError(user.email,"E-mail não informado")
             existOrError(user.senha,"Senha não informada")
-            existOrError(user.confirmSenha, "Confirmação de Senha Inválida")
             
 
             const  userFromEmailDB  = await app.db('users')
